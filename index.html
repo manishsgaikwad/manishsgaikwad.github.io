@@ -189,9 +189,9 @@
 		</div><!-- /row -->
 		<div class="quote">
 		<blockquote>
-				<p>Man must explore, and this is exploration at its greatest. </p>
+				<p id="quote"></p>
 					<br>
-                         <p> Problems look mighty small from 150 miles up.</p>
+                         <p id="author"></p>
                 </blockquote>
              </div>   
              		
@@ -230,7 +230,15 @@
         </div>
     </footer>
 
+<script type="text/javascript">
+		function parseQuote(response)
+		{
+			document.getElementById("quote").innerHTML = response.quoteText;
+			document.getElementById("author").innerHTML = response.quoteAuthor;
+		}
+	</script>
 
+	<script type="text/javascript" src="http://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&jsonp=parseQuote&lang=en"></script>
 </body>
 	<!--   Core JS Files   -->
 	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
