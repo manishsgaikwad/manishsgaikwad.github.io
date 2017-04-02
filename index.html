@@ -22,6 +22,20 @@
 </head>
 
 <body class="profile-page">
+	
+	<script type="text/javascript">
+		function parseQuote(response)
+		{
+			document.getElementById("q11").innerHTML = response.quoteText;
+			document.getElementById("a11").innerHTML = response.quoteAuthor;
+		}
+	</script>
+
+	<script type="text/javascript" src="http://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&jsonp=parseQuote&lang=en"></script>
+
+			
+	
+	
 	<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
     	<div class="container">
         	<!-- Brand and toggle get grouped for better mobile display -->
@@ -189,20 +203,10 @@
 		</div><!-- /row -->
 		<div class="quote">
 		<blockquote>
-				<p id="quote"></p>
+				<p id="q11">Man must explore, and this is exploration at its greatest.</p>
 					<br>
-                         <p id="author"></p>
+                         <p id="a11">Problems look mighty small from 150 miles up.</p>
 			
-			<script type="text/javascript">
-		function parseQuote(response)
-		{
-			document.getElementById("quote").innerHTML = response.quoteText;
-			document.getElementById("author").innerHTML = response.quoteAuthor;
-		}
-	</script>
-
-	<script type="text/javascript" src="http://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&jsonp=parseQuote&lang=en"></script>
-
 			
                 </blockquote>
              </div>   
