@@ -168,6 +168,11 @@
 
     </div>
     <footer class="footer">
+	    
+	    <a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=manishsgaikwad.github.io/&digit=style/plain/5/&reloads=0" alt="" title="" border="0"></a><br /><a href="http://www.corriereserale.com" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;">corriere</a>
+	    
+	    
+	    
     		<style type="text/css">
     			footer .copyright {
     	padding: 15px 0;
