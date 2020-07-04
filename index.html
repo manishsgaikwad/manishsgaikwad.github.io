@@ -54,7 +54,7 @@
 		app.controller('quoteController',function($scope, $http){
 			$http.get("https://api.quotable.io/random").then(function(response){
 				$scope.quoteText = response.data.content;
-				$scope.quoteAuthor = response.data.author;
+				$scope.quoteAuthor = "- " + response.data.author;
 			});
 		});
 	</script>
@@ -168,7 +168,7 @@
 						
 				<p id="q11">{{quoteText}}</p>
 				<br>
-				<p id="a11">- {{quoteAuthor}}</p>
+				<p id="a11">{{quoteAuthor}}</p>
 			
 						</div>
                 </blockquote>
